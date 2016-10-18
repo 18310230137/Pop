@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SortingView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<ZWYSearchShowViewDelegate>
 
+@property (nonatomic, retain) UIButton *screeningButton; //筛选按钮
+@property (nonatomic, strong) SortingView *sortingView; //分类视图类
 
 @end
 
